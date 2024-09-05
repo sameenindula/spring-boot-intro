@@ -1,5 +1,7 @@
 package com.cmjd.demo.entity;
 
+import java.time.LocalDateTime;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -12,7 +14,7 @@ import lombok.Setter;
 @Getter
 @Setter
 
-public class Catagory {
+public class Category {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     
@@ -20,6 +22,6 @@ public class Catagory {
     @Column(nullable = false)
     private String name;
     
-    @OneToMany'private List<Product> p
+    private LocalDateTime createdTime;
 
 }

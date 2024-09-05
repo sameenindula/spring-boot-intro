@@ -2,6 +2,7 @@ package com.cmjd.demo.service;
 
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.cmjd.demo.entity.Task;
@@ -10,6 +11,7 @@ import com.cmjd.demo.repository.TaskRepository;
 @Service
 public class TaskServiceImpl implements TaskService {
 
+    @Autowired
     private final TaskRepository taskRepository;
 
     public TaskServiceImpl(TaskRepository taskRepository) {
